@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Identify individual member of class 307</title>
+<style>
+/* body{background:url("https://imgur.com/AN5nNhO.jpg"); */
+body{background:url("Group_at_School.jpg");
+background-size: contain;
+background-repeat:no-repeat;
+height:0%;
+padding-bottom: 71%;
+position:relative;}
+.dvclass1 {width:30px; 
+height:30px; 
+border:solid 3px red;
+position:absolute;}
+.pclass1{font-size:50px;
+color:white;
+position:absolute;top:800px;left:200px;}
+#selectid1{font-size:20px;
+position:absolute;top:600px;}
+</style>
+</head>
+<body >
+<div class=dvclass1></div>
+<p class=pclass1>Selecting a name in the list will mark his/her head in the photo </p>
+<form>
+<select id=selectid1 onChange=Display()>
+<option selected hidden>請點選</option>
+<option value="13,2,5">洪芸樺</option><option>江明媛</option>
+<option>楊裕琨</option><option>王秀馨</option>
+<option>李明鐘</option><option>薛宗文</option>
+<option>王信忠</option><option>謝文龍</option>
+<option>黃瑞珍</option><option>李文鎊</option>
+<option>曾真鳳</option><option>羅國良</option>
+<option>何銘驥</option><option>施淑齡</option>
+<option>陳健成</option><option>童白玲</option>
+<option>高自芳</option><option>王文聖</option>
+<option>賴燕青</option><option>吳木林</option>
+<option>王朝和</option><option>陳健行</option>
+<option>劉文輝</option>
+</select>
+</form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+function Display() {
+console.log($('#selectid1').val())
+var no=document.getElementById("selectid1").selectedIndex;
+if(no==1){var mleft="12%";var mtop="10%";}
+if(no==2){var mleft="23%";var mtop="28%";}
+if(no==3){var mleft="92%";var mtop="25%";}
+if(no==4){var mleft="20%";var mtop="23%";}
+if(no==5){var mleft="76%";var mtop="26%";}
+if(no==6){var mleft="76%";var mtop="13%";}
+if(no==7){var mleft="57%";var mtop="24%";}
+if(no==8){var mleft="42%";var mtop="5%";}
+if(no==9){var mleft="32%";var mtop="13%";}
+if(no==10){var mleft="68%";var mtop="27%";}
+if(no==11){var mleft="28%";var mtop="23%";}
+if(no==12){var mleft="75%";var mtop="9%";}
+if(no==13){var mleft="94%";var mtop="19%";}
+if(no==14){var mleft="7%";var mtop="27%";}
+if(no==15){var mleft="52%";var mtop="20%";}
+if(no==16){var mleft="17%";var mtop="21%";}
+if(no==17){var mleft="4%";var mtop="20%";}
+if(no==18){var mleft="67%";var mtop="13%";}
+if(no==19){var mleft="51%";var mtop="15%";}
+if(no==20){var mleft="73%";var mtop="3%";}
+if(no==21){var mleft="50%";var mtop="11%";}
+if(no==22){var mleft="55%";var mtop="3%";}
+if(no==23){var mleft="46%";var mtop="19%";}
+$(".dvclass1").css("margin-left", mleft).css("margin-top", mtop);}
+</script>
+</html>
+
