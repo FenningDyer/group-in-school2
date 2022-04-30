@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <meta charset="utf-8">
 <title>Identify individual member of class 307</title>
@@ -16,7 +16,7 @@ border:solid 3px red;
 position:absolute;}
 .pclass1{font-size:50px;
 color:white;
-position:absolute;top:800px;left:200px;}
+position:absolute;top:70%;left:10%;}
 #selectid1{font-size:20px;
 position:absolute;top:600px;}
 </style>
@@ -27,7 +27,7 @@ position:absolute;top:600px;}
 <form>
 <select id=selectid1 onChange=Display()>
 <option selected hidden>請點選</option>
-<option value="13,2,5">洪芸樺</option><option>江明媛</option>
+<option>洪芸樺</option><option>江明媛</option>
 <option>楊裕琨</option><option>王秀馨</option>
 <option>李明鐘</option><option>薛宗文</option>
 <option>王信忠</option><option>謝文龍</option>
@@ -42,11 +42,10 @@ position:absolute;top:600px;}
 </select>
 </form>
 </body>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src=jquery-3.3.1.js></script>
+/* <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> */
 <script>
 function Display() {
-console.log($('#selectid1').val())
 var no=document.getElementById("selectid1").selectedIndex;
 if(no==1){var mleft="12%";var mtop="10%";}
 if(no==2){var mleft="23%";var mtop="28%";}
